@@ -1,0 +1,89 @@
+{
+  "/root": {
+    "path": "/root",
+    "type": "folder",
+    "isRoot": true,
+    "children": ["/root/david", "/root/jslancer", "/root/src", "/root/tests"]
+  },
+  "/root/src": {
+    "path": "/root/src",
+    "type": "folder",
+    "children": ["/root/src/Object.ts", "/root/src/ObjectExample.ts"]
+  },
+  "/root/src/Object.ts": {
+    "path": "/root/src/Object.ts",
+    "type": "file",
+    "isTestFile": false,
+    "content": "Object.ts File"
+  },
+
+  "/root/src/ObjectExample.ts": {
+    "path": "/root/src/ObjectExample.ts",
+    "type": "file",
+    "isTestFile": false,
+    "content": "Object Example Functions",
+    "children": [
+      "/root/src/ObjectExample.ts/caculate",
+      "/root/src/ObjectExample.ts/caculate3"
+    ],
+    "functions": ["caculate", "caculate3"]
+  },
+  "/root/src/ObjectExample.ts/caculate": {
+    "path": "/root/src/ObjectExample.ts/caculate",
+    "type": "function",
+    "name": "caculate",
+    "isSelected": false
+  },
+  "/root/src/ObjectExample.ts/caculate3": {
+    "path": "/root/src/ObjectExample.ts/caculate3",
+    "type": "function",
+    "name": "caculate3",
+    "isSelected": false
+  },
+  "/root/david": {
+    "path": "/root/david",
+    "type": "folder",
+    "children": ["/root/david/readme.md", "/root/david/readme2.md"]
+  },
+  "/root/david/readme.md": {
+    "path": "/root/david/readme.md",
+    "type": "file",
+    "content": "Thanks for reading me me. But there is nothing here."
+  },
+  "/root/david/readme2.md": {
+    "path": "/root/david/readme2.md",
+    "type": "file",
+    "content": "Readme2."
+  },
+  "/root/jslancer": {
+    "path": "/root/jslancer",
+    "type": "folder",
+    "children": ["/root/jslancer/projects", "/root/jslancer/vblogs"]
+  },
+  "/root/jslancer/projects": {
+    "path": "/root/jslancer/projects",
+    "type": "folder",
+    "children": ["/root/jslancer/projects/treeview"]
+  },
+  "/root/jslancer/projects/treeview": {
+    "path": "/root/jslancer/projects/treeview",
+    "type": "folder",
+    "children": []
+  },
+  "/root/jslancer/vblogs": {
+    "path": "/root/jslancer/vblogs",
+    "type": "folder",
+    "children": []
+  },
+  "/root/tests": {
+    "path": "/root/tests",
+    "type": "folder",
+    "children": ["/root/tests/ObjectExample.test.ts"]
+  },
+  "/root/tests/ObjectExample.test.ts": {
+    "path": "/root/tests/ObjectExample.test.ts",
+    "type": "file",
+    "isTestFile": true,
+    "content": "Test file"
+   }
+}

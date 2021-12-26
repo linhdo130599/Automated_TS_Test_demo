@@ -1,0 +1,49 @@
+import {create_instance_test, external_method_test, object_literal_expresion_test} from "../src/ObjectExample";
+// import * as sumModule from "../src/ObjectExample"
+import * as objectModule from "./exports.txt"
+import {ImportMock} from "ts-mock-imports";
+import {Person, sum} from "../src/Objects";
+import {SerializationHelper} from "./SerializationHelper";
+// const object_literal_expresion_testInput =  [[{"school":{"name":"DHCN"},"name":"UET"},"",null],[{"school":{"name":""},"name":"UET"},"",null],[{"name":""},"",null]] ;
+const object = {
+    "children": [1,2,3,4],
+    "person":{
+        "type": "Person",
+        "name": "hoaithu",
+        "age": 23,
+        "school": {
+            "name": "UET",
+            "type": "School"
+        },
+        "tmp": {
+            "tmp1": "A",
+            "tmp2": "B"
+        },
+        "phoneNumber": ["123","456","789"],
+        "parrent": {
+            "type": "Person",
+            "name": "PARENT",
+            "age": 40
+        },
+        "pets": [
+            {"sound": "tutu", "type": "Animal"}
+        ]
+
+    }
+}
+
+let paramters: any = {};
+SerializationHelper.fillFromJSON(JSON.stringify(object), paramters);
+// paramters = SerializationHelper.fillFromJSON(JSON.stringify(object), paramters);
+describe("Test",  () => {
+    // object_literal_expresion_testInput.forEach(parameters => {
+    //     // const stub = ImportMock.mockFunction(sumModule, 'sum', 5);
+    //     it("Test",  () => {
+    //         let x = sum(1,2);
+    //         object_literal_expresion_test.apply(null, parameters);
+    //     } )
+    // })
+    it("test mock fucntion", () => {
+        create_instance_test.apply(null, paramters["person"]);
+    })
+})

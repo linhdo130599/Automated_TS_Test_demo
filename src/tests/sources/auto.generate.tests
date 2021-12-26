@@ -1,0 +1,14 @@
+import {object_literal_expresion_test} from "../../../../../../../../../../../../../typescript-automated-testdata-generator/src/tests/sources/Functions";
+describe("Test for function: object_literal_expresion_test",  () => {
+    it("Test 1",  () => {
+,            var person =  {} ;
+            var s =  null ;
+            var a =  [] ;
+,            person.school.name = "DHCN";
+            a[0] = 1;
+            person.name = "UET";
+            s = "";
+             = undefined;
+,            object_literal_expresion_test.apply(null,[personsa]);
+,    } )
+})

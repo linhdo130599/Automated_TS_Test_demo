@@ -1,0 +1,10 @@
+.idea
+node_modules
+src/config.env
+src/config-tmp.env
+typescript-automated-testdata-generator.iml
+client/node_modules
+dist
+public
+package-lock.json
+yarn.lock
